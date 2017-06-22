@@ -1,0 +1,24 @@
+function thisloadobj(this, s)
+    % 1 8
+    % 2 8
+    % 3 8
+    % 4 8
+    % 5 8
+    % 6 8
+    % 7 8
+    this.Fstop1 = s.Fstop1;
+    this.F6dB1 = s.F6dB1;
+    this.F3dB1 = s.F3dB1;
+    this.Fpass1 = s.Fpass1;
+    this.Fpass2 = s.Fpass2;
+    this.F3dB2 = s.F3dB2;
+    this.F6dB2 = s.F6dB2;
+    this.Fstop2 = s.Fstop2;
+    this.BWpass = s.BWpass;
+    this.BWstop = s.BWstop;
+    this.Astop1 = s.Astop1;
+    this.Apass = s.Apass;
+    this.Astop2 = s.Astop2;
+    this.FrequencyConstraints = s.FrequencyConstraints;
+    this.MagnitudeConstraints = s.MagnitudeConstraints;
+end % function

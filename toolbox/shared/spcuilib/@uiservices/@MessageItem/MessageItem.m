@@ -1,0 +1,25 @@
+function h = MessageItem(mType, mCategory, mSummary, mDetail)
+    % 1 10
+    % 2 10
+    % 3 10
+    % 4 10
+    % 5 10
+    % 6 10
+    % 7 10
+    % 8 10
+    h = uiservices.MessageItem;
+    h.Time = now;
+    % 11 13
+    if gt(nargin, 0.0)
+        h.Type = mType;
+    end % if
+    if gt(nargin, 1.0)
+        h.Category = mCategory;
+    end % if
+    if gt(nargin, 2.0)
+        h.Summary = mSummary;
+    end % if
+    if gt(nargin, 3.0)
+        h.Detail = mDetail;
+    end % if
+end % function

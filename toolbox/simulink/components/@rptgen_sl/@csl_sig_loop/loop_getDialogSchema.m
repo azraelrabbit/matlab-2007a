@@ -1,0 +1,59 @@
+function dlgStruct = loop_getDialogSchema(this, name)
+    % 1 7
+    % 2 7
+    % 3 7
+    % 4 7
+    % 5 7
+    % 6 7
+    if not(builtin('license', 'checkout', 'SIMULINK_Report_Gen'))
+        dlgStruct = this.buildErrorMessage('panel', true);
+        return;
+        % 10 11
+    end % if
+    % 12 39
+    % 13 39
+    % 14 39
+    % 15 39
+    % 16 39
+    % 17 39
+    % 18 39
+    % 19 39
+    % 20 39
+    % 21 39
+    % 22 39
+    % 23 39
+    % 24 39
+    % 25 39
+    % 26 39
+    % 27 39
+    % 28 39
+    % 29 39
+    % 30 39
+    % 31 39
+    % 32 39
+    % 33 39
+    % 34 39
+    % 35 39
+    % 36 39
+    % 37 39
+    % 38 39
+    dlgStruct = this.dlgContainer(vertcat(cellhorzcat(this.dlgWidget('isBlockIncoming', 'RowSpan', [1.0 1.0], 'ColSpan', [1.0 1.0])), cellhorzcat(this.dlgWidget('isBlockOutgoing', 'RowSpan', [2.0 2.0], 'ColSpan', [1.0 1.0])), cellhorzcat(this.dlgWidget('isSystemIncoming', 'RowSpan', [1.0 1.0], 'ColSpan', [2.0 2.0])), cellhorzcat(this.dlgWidget('isSystemInternal', 'RowSpan', [2.0 2.0], 'ColSpan', [2.0 2.0])), cellhorzcat(this.dlgWidget('isSystemOutgoing', 'RowSpan', [3.0 3.0], 'ColSpan', [2.0 2.0])), cellhorzcat(this.dlgWidget('SortBy', 'RowSpan', [4.0 4.0], 'ColSpan', [1.0 2.0]))), xlate('Select Signals'), 'LayoutGrid', [4.0 2.0]);
+    % 40 58
+    % 41 58
+    % 42 58
+    % 43 58
+    % 44 58
+    % 45 58
+    % 46 58
+    % 47 58
+    % 48 58
+    % 49 58
+    % 50 58
+    % 51 58
+    % 52 58
+    % 53 58
+    % 54 58
+    % 55 58
+    % 56 58
+    % 57 58
+end % function

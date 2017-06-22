@@ -1,0 +1,119 @@
+function renderCore(h, hPropParent)
+    % 1 31
+    % 2 31
+    % 3 31
+    % 4 31
+    % 5 31
+    % 6 31
+    % 7 31
+    % 8 31
+    % 9 31
+    % 10 31
+    % 11 31
+    % 12 31
+    % 13 31
+    % 14 31
+    % 15 31
+    % 16 31
+    % 17 31
+    % 18 31
+    % 19 31
+    % 20 31
+    % 21 31
+    % 22 31
+    % 23 31
+    % 24 31
+    % 25 31
+    % 26 31
+    % 27 31
+    % 28 31
+    % 29 31
+    enforceItemSeparators(h, false, true);
+    % 31 40
+    % 32 40
+    % 33 40
+    % 34 40
+    % 35 40
+    % 36 40
+    % 37 40
+    % 38 40
+    childObjOrder = computeChildOrder(h, true, Inf);
+    % 40 74
+    % 41 74
+    % 42 74
+    % 43 74
+    % 44 74
+    % 45 74
+    % 46 74
+    % 47 74
+    % 48 74
+    % 49 74
+    % 50 74
+    % 51 74
+    % 52 74
+    % 53 74
+    % 54 74
+    % 55 74
+    % 56 74
+    % 57 74
+    % 58 74
+    % 59 74
+    % 60 74
+    % 61 74
+    % 62 74
+    % 63 74
+    % 64 74
+    % 65 74
+    % 66 74
+    % 67 74
+    % 68 74
+    % 69 74
+    % 70 74
+    % 71 74
+    % 72 74
+    if not(isempty(h.Parent))
+        % 74 76
+        h.GraphicalParent = h.Parent;
+    end % if
+    % 77 83
+    % 78 83
+    % 79 83
+    % 80 83
+    % 81 83
+    if lt(nargin, 2.0)
+        hPropParent = [];
+    end % if
+    h.renderPre(hPropParent);
+    % 86 92
+    % 87 92
+    % 88 92
+    % 89 92
+    % 90 92
+    render_widget(h);
+    % 92 98
+    % 93 98
+    % 94 98
+    % 95 98
+    % 96 98
+    hWidget = h.hWidget;
+    if not(isempty(hWidget)) && ishandle(hWidget)
+        childGraphicalParent = hWidget;
+    else
+        childGraphicalParent = h.GraphicalParent;
+    end % if
+    % 103 107
+    % 104 107
+    % 105 107
+    for hChild=childObjOrder
+        render(hChild, childGraphicalParent);
+    end % for
+    % 109 115
+    % 110 115
+    % 111 115
+    % 112 115
+    % 113 115
+    h.renderPost;
+    % 115 118
+    % 116 118
+    drawnow('expose');
+end % function

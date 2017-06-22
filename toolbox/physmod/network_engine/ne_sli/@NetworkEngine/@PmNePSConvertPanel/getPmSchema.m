@@ -1,0 +1,29 @@
+function [retStatus, pmSchema] = getPmSchema(hThis, pmSchema)
+    % 1 14
+    % 2 14
+    % 3 14
+    % 4 14
+    % 5 14
+    % 6 14
+    % 7 14
+    % 8 14
+    % 9 14
+    % 10 14
+    % 11 14
+    % 12 14
+    % 13 14
+    retStatus = true;
+    % 15 16
+    mySchema = struct([]);
+    mySchema(1.0).ClassName = class(hThis);
+    mySchema(1.0).Version = '1.0.0';
+    % 19 20
+    mySchema(1.0).Parameters.ParamName = hThis.ParamName;
+    mySchema(1.0).Parameters.ConverterMode = hThis.ConverterMode;
+    retStatus = true;
+    % 23 25
+    % 24 25
+    [retStat, myItems] = hThis.getPmSchemaFromChildren();
+    mySchema(1.0).Items = myItems;
+    pmSchema = mySchema(1.0);
+end % function

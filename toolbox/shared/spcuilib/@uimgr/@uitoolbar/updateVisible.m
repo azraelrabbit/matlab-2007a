@@ -1,0 +1,59 @@
+function updateVisible(h, vis)
+    % 1 27
+    % 2 27
+    % 3 27
+    % 4 27
+    % 5 27
+    % 6 27
+    % 7 27
+    % 8 27
+    % 9 27
+    % 10 27
+    % 11 27
+    % 12 27
+    % 13 27
+    % 14 27
+    % 15 27
+    % 16 27
+    % 17 27
+    % 18 27
+    % 19 27
+    % 20 27
+    % 21 27
+    % 22 27
+    % 23 27
+    % 24 27
+    % 25 27
+    % 26 27
+    if lt(nargin, 2.0)
+        vis = h.Visible;
+    end % if
+    % 30 39
+    % 31 39
+    % 32 39
+    % 33 39
+    % 34 39
+    % 35 39
+    % 36 39
+    % 37 39
+    % 38 39
+    if strcmpi(vis, 'off') || not(h.RenderOrderBugFixEnabled) || isempty(h.RenderOrderBugFixFcn)
+        % 40 43
+        % 41 43
+        % 42 43
+        hh = h.hWidget;
+        if not(isempty(hh)) && ishandle(hh)
+            set(hh, 'visible', vis);
+        end % if
+    else
+        % 48 50
+        % 49 50
+        h.RenderOrderBugFixFcn();
+    end % if
+    % 52 57
+    % 53 57
+    % 54 57
+    % 55 57
+    % 56 57
+    h.RenderOrderBugFixEnabled = true;
+end % function

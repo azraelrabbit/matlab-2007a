@@ -1,0 +1,27 @@
+function refresh(this, varargin)
+    % 1 11
+    % 2 11
+    % 3 11
+    % 4 11
+    % 5 11
+    % 6 11
+    % 7 11
+    % 8 11
+    % 9 11
+    % 10 11
+    mdlObj = getParent(this);
+    this.ModelName = mdlObj.name;
+    this.DisplayName = this.ModelName;
+    % 14 16
+    % 15 16
+    this.modelRefsAll = {};
+    this.modelRefs = {};
+    this.BuildDirSrcObj = [];
+    this.BuildDirHelperObj = [];
+    this.SharedDirObj = [];
+    this.htmlReportObj = {};
+    this.submodels = {};
+    this.subsystems = {};
+    % 24 25
+    this.load(varargin{:});
+end % function

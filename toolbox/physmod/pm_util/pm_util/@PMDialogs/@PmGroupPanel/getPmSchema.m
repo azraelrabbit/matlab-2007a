@@ -1,0 +1,29 @@
+function [retStatus, pmSchema] = getPmSchema(hThis, pmSchema)
+    % 1 15
+    % 2 15
+    % 3 15
+    % 4 15
+    % 5 15
+    % 6 15
+    % 7 15
+    % 8 15
+    % 9 15
+    % 10 15
+    % 11 15
+    % 12 15
+    % 13 15
+    % 14 15
+    mySchema.ClassName = 'PMDialogs.PmGroupPanel';
+    mySchema.Version = '1.0.0';
+    pmSchema = mySchema;
+    % 18 19
+    mySchema(1.0).Parameters.Label = hThis.Label;
+    mySchema(1.0).Parameters.Style = hThis.Style;
+    mySchema(1.0).Parameters.StdLayoutCfg = hThis.StdLayoutCfg;
+    retStatus = true;
+    % 23 25
+    % 24 25
+    [retStat, myItems] = hThis.getPmSchemaFromChildren();
+    mySchema(1.0).Items = myItems;
+    pmSchema = mySchema(1.0);
+end % function

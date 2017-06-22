@@ -1,0 +1,22 @@
+function update(theJumpTo, eventData)
+    % 1 12
+    % 2 12
+    % 3 12
+    % 4 12
+    % 5 12
+    % 6 12
+    % 7 12
+    % 8 12
+    % 9 12
+    % 10 12
+    % 11 12
+    theJumpTo.performingFrameReset = true;
+    % 13 16
+    % 14 16
+    % 15 16
+    dataObj = eventData.Source.dataSource.dataSource;
+    theJumpTo.maxframe = dataObj.numFrames;
+    theJumpTo.frame = 1.0;
+    % 19 20
+    theJumpTo.performingFrameReset = false;
+end % function

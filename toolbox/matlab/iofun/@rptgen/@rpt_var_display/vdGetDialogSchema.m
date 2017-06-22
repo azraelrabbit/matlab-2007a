@@ -1,0 +1,35 @@
+function dlgStruct = vdGetDialogSchema(this, name, varargin)
+    % 1 14
+    % 2 14
+    % 3 14
+    % 4 14
+    % 5 14
+    % 6 14
+    % 7 14
+    % 8 14
+    % 9 14
+    % 10 14
+    % 11 14
+    % 12 14
+    % 13 14
+    dlgStruct = this.dlgContainer(vertcat(cellhorzcat(this.dlgWidget('TitleMode', 'DialogRefresh', true, 'RowSpan', [1.0 1.0], 'ColSpan', [1.0 1.0])), cellhorzcat(this.dlgWidget('CustomTitle', 'Enabled', strcmp(this.TitleMode, 'manual'), 'RowSpan', [1.0 1.0], 'ColSpan', [2.0 2.0])), cellhorzcat(this.dlgWidget('SizeLimit', 'RowSpan', [2.0 2.0], 'ColSpan', [1.0 2.0])), cellhorzcat(this.dlgWidget('DisplayTable', 'RowSpan', [3.0 3.0], 'ColSpan', [1.0 2.0])), cellhorzcat(this.dlgWidget('IgnoreIfEmpty', 'RowSpan', [4.0 4.0], 'ColSpan', [1.0 2.0]))), xlate('Display Options'), 'LayoutGrid', [5.0 2.0], 'RowStretch', [0.0 0.0 0.0 0.0 1.0], 'ColStretch', [0.0 1.0], varargin{:});
+    % 15 34
+    % 16 34
+    % 17 34
+    % 18 34
+    % 19 34
+    % 20 34
+    % 21 34
+    % 22 34
+    % 23 34
+    % 24 34
+    % 25 34
+    % 26 34
+    % 27 34
+    % 28 34
+    % 29 34
+    % 30 34
+    % 31 34
+    % 32 34
+    % 33 34
+end % function

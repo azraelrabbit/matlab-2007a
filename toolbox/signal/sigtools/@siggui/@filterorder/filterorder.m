@@ -1,0 +1,30 @@
+function h = filterorder(mode, isMinOrd, ord)
+    % 1 13
+    % 2 13
+    % 3 13
+    % 4 13
+    % 5 13
+    % 6 13
+    % 7 13
+    % 8 13
+    % 9 13
+    % 10 13
+    % 11 13
+    error(nargchk(0.0, 3.0, nargin));
+    % 13 16
+    % 14 16
+    h = siggui.filterorder;
+    % 16 19
+    % 17 19
+    if gt(nargin, 0.0)
+        set(h, 'mode', mode);
+    end % if
+    if gt(nargin, 1.0)
+        set(h, 'isMinOrd', isMinOrd);
+    end % if
+    if gt(nargin, 2.0)
+        set(h, 'order', ord);
+    end % if
+    set(h, 'version', 1.0);
+    settag(h);
+end % function

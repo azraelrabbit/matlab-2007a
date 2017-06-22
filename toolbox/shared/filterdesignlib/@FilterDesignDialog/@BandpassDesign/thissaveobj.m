@@ -1,0 +1,24 @@
+function s = thissaveobj(this, s)
+    % 1 8
+    % 2 8
+    % 3 8
+    % 4 8
+    % 5 8
+    % 6 8
+    % 7 8
+    s.Fstop1 = this.Fstop1;
+    s.F6dB1 = this.F6dB1;
+    s.F3dB1 = this.F3dB1;
+    s.Fpass1 = this.Fpass1;
+    s.Fpass2 = this.Fpass2;
+    s.F3dB2 = this.F3dB2;
+    s.F6dB2 = this.F6dB2;
+    s.Fstop2 = this.Fstop2;
+    s.BWpass = this.BWpass;
+    s.BWstop = this.BWstop;
+    s.Astop1 = this.Astop1;
+    s.Apass = this.Apass;
+    s.Astop2 = this.Astop2;
+    s.FrequencyConstraints = this.FrequencyConstraints;
+    s.MagnitudeConstraints = this.MagnitudeConstraints;
+end % function

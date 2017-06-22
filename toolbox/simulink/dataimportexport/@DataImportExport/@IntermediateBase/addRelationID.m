@@ -1,0 +1,156 @@
+function addRelationID(hIntermediate, hArrayNode)
+    % 1 8
+    % 2 8
+    % 3 8
+    % 4 8
+    % 5 8
+    % 6 8
+    % 7 8
+    s_setRelationID(hIntermediate, hArrayNode);
+    % 9 43
+    % 10 43
+    % 11 43
+    % 12 43
+    % 13 43
+    % 14 43
+    % 15 43
+    % 16 43
+    % 17 43
+    % 18 43
+    % 19 43
+    % 20 43
+    % 21 43
+    % 22 43
+    % 23 43
+    % 24 43
+    % 25 43
+    % 26 43
+    % 27 43
+    % 28 43
+    % 29 43
+    % 30 43
+    % 31 43
+    % 32 43
+    % 33 43
+    % 34 43
+    % 35 43
+    % 36 43
+    % 37 43
+    % 38 43
+    % 39 43
+    % 40 43
+    % 41 43
+    % 42 43
+end % function
+function s_setRelationID(hIntermediate, hArrayNode)
+    % 45 59
+    % 46 59
+    % 47 59
+    % 48 59
+    % 49 59
+    % 50 59
+    % 51 59
+    % 52 59
+    % 53 59
+    % 54 59
+    % 55 59
+    % 56 59
+    % 57 59
+    % 58 59
+    if strcmp(hArrayNode.FunctionalType, 'udd_object') && isequal(prod(hArrayNode.Dimensions), 1.0)
+        % 60 62
+        % 61 62
+        RelationID = s_findRelationID(hIntermediate, hArrayNode);
+        % 63 65
+        % 64 65
+        if isempty(RelationID)
+            % 66 67
+            RelationID = s_createRelationID(hIntermediate);
+            % 68 70
+            % 69 70
+            s_mapRelationIDToSource(hIntermediate, hArrayNode.SourceID, RelationID);
+            % 71 72
+        end % if
+    else
+        % 74 76
+        % 75 76
+        RelationID = s_createRelationID(hIntermediate);
+    end % if
+    % 78 80
+    % 79 80
+    hArrayNode.RelationID = RelationID;
+    % 81 82
+end % function
+function RelationID = s_createRelationID(hIntermediate)
+    % 84 92
+    % 85 92
+    % 86 92
+    % 87 92
+    % 88 92
+    % 89 92
+    % 90 92
+    % 91 92
+    RelationID = plus(hIntermediate.RelationIDLastIndex, 1.0);
+    % 93 95
+    % 94 95
+    hIntermediate.RelationIDLastIndex = RelationID;
+    % 96 98
+    % 97 98
+    RelationID = sprintf('%d', RelationID);
+    % 99 100
+end % function
+function RelationID = s_findRelationID(hIntermediate, hArrayNode)
+    % 102 111
+    % 103 111
+    % 104 111
+    % 105 111
+    % 106 111
+    % 107 111
+    % 108 111
+    % 109 111
+    % 110 111
+    SourceID = hArrayNode.SourceID;
+    % 112 114
+    % 113 114
+    SourceObjectsID = hIntermediate.SourceObjectsID;
+    % 115 117
+    % 116 117
+    IDIndex = find(strcmp(SourceID, SourceObjectsID));
+    % 118 120
+    % 119 120
+    SourceObjectsRelationID = hIntermediate.SourceObjectsRelationID;
+    % 121 123
+    % 122 123
+    if le(IDIndex, numel(SourceObjectsRelationID))
+        % 124 125
+        RelationID = SourceObjectsRelationID{IDIndex};
+    else
+        % 127 128
+        RelationID = [];
+    end % if
+    % 130 131
+end % function
+function s_mapRelationIDToSource(hIntermediate, SourceID, RelationID)
+    % 133 141
+    % 134 141
+    % 135 141
+    % 136 141
+    % 137 141
+    % 138 141
+    % 139 141
+    % 140 141
+    SourceObjectsID = hIntermediate.SourceObjectsID;
+    % 142 144
+    % 143 144
+    IDIndex = strcmp(SourceID, SourceObjectsID);
+    % 145 147
+    % 146 147
+    SourceObjectsRelationID = hIntermediate.SourceObjectsRelationID;
+    % 148 150
+    % 149 150
+    SourceObjectsRelationID{IDIndex} = RelationID;
+    % 151 153
+    % 152 153
+    hIntermediate.SourceObjectsRelationID = SourceObjectsRelationID;
+    % 154 155
+end % function

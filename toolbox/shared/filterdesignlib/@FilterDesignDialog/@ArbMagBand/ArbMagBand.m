@@ -1,0 +1,27 @@
+function this = ArbMagBand(freqValues, amplitudeValues, magValues, phaseValues, freqrespValues)
+    % 1 9
+    % 2 9
+    % 3 9
+    % 4 9
+    % 5 9
+    % 6 9
+    % 7 9
+    % 8 9
+    this = FilterDesignDialog.ArbMagBand;
+    % 10 11
+    if gt(nargin, 0.0)
+        set(this, 'Frequencies', freqValues);
+        if gt(nargin, 1.0)
+            set(this, 'Amplitudes', amplitudeValues);
+            if gt(nargin, 2.0)
+                set(this, 'Magnitudes', magValues);
+                if gt(nargin, 3.0)
+                    set(this, 'Phases', phaseValues);
+                    if gt(nargin, 4.0)
+                        set(this, 'FreqResp', freqrespValues);
+                    end % if
+                end % if
+            end % if
+        end % if
+    end % if
+end % function

@@ -1,0 +1,35 @@
+function this = VHDLInstantiation(block, instantiationFunction, instantiationParams)
+    % 1 25
+    % 2 25
+    % 3 25
+    % 4 25
+    % 5 25
+    % 6 25
+    % 7 25
+    % 8 25
+    % 9 25
+    % 10 25
+    % 11 25
+    % 12 25
+    % 13 25
+    % 14 25
+    % 15 25
+    % 16 25
+    % 17 25
+    % 18 25
+    % 19 25
+    % 20 25
+    % 21 25
+    % 22 25
+    % 23 25
+    % 24 25
+    this = hdlbuiltinimpl.VHDLInstantiation;
+    % 26 27
+    supportedBlocks = [];
+    % 28 29
+    this.init('SupportedBlocks', supportedBlocks, 'Block', block, 'CodeGenMode', 'vhdlinstantiation', 'CodeGenFunc', instantiationFunction, 'CodeGenParams', instantiationParams, 'HandleType', 'useslhandle');
+    % 30 34
+    % 31 34
+    % 32 34
+    % 33 34
+end % function

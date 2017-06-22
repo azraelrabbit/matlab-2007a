@@ -1,0 +1,9 @@
+function ignoreValue = atIgnoreValue(this, objType, propName, propVal)
+    % 1 7
+    % 2 7
+    % 3 7
+    % 4 7
+    % 5 7
+    % 6 7
+    ignoreValue = false;
+end % function

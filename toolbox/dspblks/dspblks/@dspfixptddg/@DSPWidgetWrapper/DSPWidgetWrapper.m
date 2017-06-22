@@ -1,0 +1,44 @@
+function this = DSPWidgetWrapper(dlgSchema, blockInfo, userData)
+    % 1 21
+    % 2 21
+    % 3 21
+    % 4 21
+    % 5 21
+    % 6 21
+    % 7 21
+    % 8 21
+    % 9 21
+    % 10 21
+    % 11 21
+    % 12 21
+    % 13 21
+    % 14 21
+    % 15 21
+    % 16 21
+    % 17 21
+    % 18 21
+    % 19 21
+    % 20 21
+    if lt(nargin, 3.0)
+        userData = '';
+    end % if
+    % 24 25
+    this = dspfixptddg.DSPWidgetWrapper;
+    % 26 27
+    this.DialogSchema = dlgSchema;
+    this.DialogSchema.Source = this;
+    % 29 30
+    if gt(nargin, 1.0)
+        if ne(length(blockInfo.propNames), length(blockInfo.propTypes))
+            error('Length of propNames and propTypes should be same.');
+        end % if
+        this.PropNames = blockInfo.propNames;
+        this.PropTypes = blockInfo.propTypes;
+        this.Block = blockInfo.block;
+        for ind=1.0:length(this.propNames)
+            schema.prop(this, this.propNames{ind}, this.propTypes{ind});
+        end % for
+    end % if
+    % 41 42
+    this.UserData = userData;
+end % function

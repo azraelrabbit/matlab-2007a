@@ -1,0 +1,52 @@
+function [widget, widgetLbl] = getValidatingEditWidgetAndLabel(a_hController, a_hSrc, a_Property, a_Visible, a_Enabled, a_Refresh, a_Name, a_ToolTip, a_TagPrefix, a_WidgetIdPrefix, a_PageName)
+    % 1 26
+    % 2 26
+    % 3 26
+    % 4 26
+    % 5 26
+    % 6 26
+    % 7 26
+    % 8 26
+    % 9 26
+    % 10 26
+    % 11 26
+    % 12 26
+    % 13 26
+    % 14 26
+    % 15 26
+    % 16 26
+    % 17 26
+    % 18 26
+    % 19 26
+    % 20 26
+    % 21 26
+    % 22 26
+    % 23 26
+    % 24 26
+    % 25 26
+    widgetLbl = [];
+    widgetLbl.Name = a_Name;
+    widgetLbl.Type = 'text';
+    widgetLbl.Tag = horzcat(a_TagPrefix, a_Property, 'Lbl');
+    widgetLbl.Visible = a_Visible;
+    widgetLbl.ToolTip = a_ToolTip;
+    widgetLbl.WidgetId = horzcat(a_WidgetIdPrefix, a_Property, 'Lbl');
+    % 33 35
+    % 34 35
+    widget = getValidatingEditWidget(a_hController, a_hSrc, a_Property, a_Visible, a_Enabled, a_Refresh, '', a_ToolTip, a_TagPrefix, a_WidgetIdPrefix, a_PageName);
+    % 36 49
+    % 37 49
+    % 38 49
+    % 39 49
+    % 40 49
+    % 41 49
+    % 42 49
+    % 43 49
+    % 44 49
+    % 45 49
+    % 46 49
+    % 47 49
+    % 48 49
+    widget.UserData.Name = a_Name;
+    widgetLbl.Buddy = widget.Tag;
+end % function

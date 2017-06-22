@@ -1,0 +1,77 @@
+function selectionConstraintRestore(theChild)
+    % 1 28
+    % 2 28
+    % 3 28
+    % 4 28
+    % 5 28
+    % 6 28
+    % 7 28
+    % 8 28
+    % 9 28
+    % 10 28
+    % 11 28
+    % 12 28
+    % 13 28
+    % 14 28
+    % 15 28
+    % 16 28
+    % 17 28
+    % 18 28
+    % 19 28
+    % 20 28
+    % 21 28
+    % 22 28
+    % 23 28
+    % 24 28
+    % 25 28
+    % 26 28
+    theWidget = theChild.hWidget;
+    old_offCB = get(theWidget, 'offcallback');
+    set(theWidget, 'offcallback', @(h1,e1)local_RestoreButtonState(theChild,old_offCB));
+    % 30 33
+    % 31 33
+end
+function local_RestoreButtonState(theChild, old_offCB)
+    % 34 66
+    % 35 66
+    % 36 66
+    % 37 66
+    % 38 66
+    % 39 66
+    % 40 66
+    % 41 66
+    % 42 66
+    % 43 66
+    % 44 66
+    % 45 66
+    % 46 66
+    % 47 66
+    % 48 66
+    % 49 66
+    % 50 66
+    % 51 66
+    % 52 66
+    % 53 66
+    % 54 66
+    % 55 66
+    % 56 66
+    % 57 66
+    % 58 66
+    % 59 66
+    % 60 66
+    % 61 66
+    % 62 66
+    % 63 66
+    % 64 66
+    theWidget = theChild.hWidget;
+    old_onCB = get(theWidget, 'oncallback');
+    set(theWidget, 'oncallback', '');
+    % 68 70
+    set(theWidget, theChild.StateName, 'on', 'offcallback', old_offCB, 'oncallback', old_onCB);
+    % 70 77
+    % 71 77
+    % 72 77
+    % 73 77
+    % 74 77
+    % 75 77
+end

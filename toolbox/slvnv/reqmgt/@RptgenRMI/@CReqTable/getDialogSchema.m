@@ -1,0 +1,32 @@
+function dlgStruct = getDialogSchema(this, name)
+    % 1 9
+    % 2 9
+    % 3 9
+    % 4 9
+    % 5 9
+    % 6 9
+    % 7 9
+    % 8 9
+    dlgStruct = this.dlgMain(name, vertcat(cellhorzcat(this.dlgContainer(vertcat(cellhorzcat(this.dlgWidget('Source', 'RowSpan', [1.0 1.0], 'ColSpan', [1.0 2.0])), cellhorzcat(this.dlgWidget('TitleType', 'RowSpan', [2.0 2.0], 'ColSpan', [1.0 1.0], 'DialogRefresh', true)), cellhorzcat(this.dlgWidget('TableTitle', 'RowSpan', [2.0 2.0], 'ColSpan', [2.0 2.0], 'Enabled', strcmp(this.TitleType, 'manual')))), xlate('Table Options'), 'LayoutGrid', [2.0 2.0], 'ColStretch', [0.0 1.0])), cellhorzcat(this.dlgContainer(vertcat(cellhorzcat(this.dlgWidget('isDescription')), cellhorzcat(this.dlgWidget('isDoc')), cellhorzcat(this.dlgWidget('isID')), cellhorzcat(this.dlgWidget('isKeyword'))), xlate('Table Columns')))));
+    % 10 31
+    % 11 31
+    % 12 31
+    % 13 31
+    % 14 31
+    % 15 31
+    % 16 31
+    % 17 31
+    % 18 31
+    % 19 31
+    % 20 31
+    % 21 31
+    % 22 31
+    % 23 31
+    % 24 31
+    % 25 31
+    % 26 31
+    % 27 31
+    % 28 31
+    % 29 31
+    % 30 31
+end % function

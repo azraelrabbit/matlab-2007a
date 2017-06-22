@@ -1,0 +1,15 @@
+function rtwassert(condition, assertMsg)
+    % 1 9
+    % 2 9
+    % 3 9
+    % 4 9
+    % 5 9
+    % 6 9
+    % 7 9
+    % 8 9
+    if eq(nargin, 1.0)
+        assertMsg = '';
+    end % if
+    % 12 13
+    slprivate('slassert', condition, assertMsg);
+end % function

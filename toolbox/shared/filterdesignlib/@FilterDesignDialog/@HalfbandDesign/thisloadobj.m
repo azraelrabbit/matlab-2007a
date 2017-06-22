@@ -1,0 +1,13 @@
+function thisloadobj(this, s)
+    % 1 8
+    % 2 8
+    % 3 8
+    % 4 8
+    % 5 8
+    % 6 8
+    % 7 8
+    this.TransitionWidth = s.TransitionWidth;
+    this.Astop = s.Astop;
+    this.FrequencyConstraints = s.FrequencyConstraints;
+    this.MagnitudeConstraints = s.MagnitudeConstraints;
+end % function

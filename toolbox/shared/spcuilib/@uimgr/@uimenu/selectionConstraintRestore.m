@@ -1,0 +1,64 @@
+function selectionConstraintRestore(theChild)
+    % 1 25
+    % 2 25
+    % 3 25
+    % 4 25
+    % 5 25
+    % 6 25
+    % 7 25
+    % 8 25
+    % 9 25
+    % 10 25
+    % 11 25
+    % 12 25
+    % 13 25
+    % 14 25
+    % 15 25
+    % 16 25
+    % 17 25
+    % 18 25
+    % 19 25
+    % 20 25
+    % 21 25
+    % 22 25
+    % 23 25
+    theWidget = theChild.hWidget;
+    old_CB = get(theWidget, 'callback');
+    set(theWidget, 'callback', @(h1,e1)local_RestoreMenuState(theChild,old_CB));
+    % 27 30
+    % 28 30
+end
+function local_RestoreMenuState(theChild, old_CB)
+    % 31 55
+    % 32 55
+    % 33 55
+    % 34 55
+    % 35 55
+    % 36 55
+    % 37 55
+    % 38 55
+    % 39 55
+    % 40 55
+    % 41 55
+    % 42 55
+    % 43 55
+    % 44 55
+    % 45 55
+    % 46 55
+    % 47 55
+    % 48 55
+    % 49 55
+    % 50 55
+    % 51 55
+    % 52 55
+    % 53 55
+    theWidget = theChild.hWidget;
+    set(theWidget, 'callback', '');
+    % 56 58
+    set(theWidget, theChild.StateName, 'on', 'callback', old_CB);
+    % 58 64
+    % 59 64
+    % 60 64
+    % 61 64
+    % 62 64
+end

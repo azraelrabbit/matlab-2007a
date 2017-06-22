@@ -1,0 +1,69 @@
+function this = DataTypeRowBestPrec(row, controller, customStruct)
+    % 1 42
+    % 2 42
+    % 3 42
+    % 4 42
+    % 5 42
+    % 6 42
+    % 7 42
+    % 8 42
+    % 9 42
+    % 10 42
+    % 11 42
+    % 12 42
+    % 13 42
+    % 14 42
+    % 15 42
+    % 16 42
+    % 17 42
+    % 18 42
+    % 19 42
+    % 20 42
+    % 21 42
+    % 22 42
+    % 23 42
+    % 24 42
+    % 25 42
+    % 26 42
+    % 27 42
+    % 28 42
+    % 29 42
+    % 30 42
+    % 31 42
+    % 32 42
+    % 33 42
+    % 34 42
+    % 35 42
+    % 36 42
+    % 37 42
+    % 38 42
+    % 39 42
+    % 40 42
+    % 41 42
+    this = dspfixptddg.DataTypeRowBestPrec;
+    % 43 44
+    this.Row = row;
+    this.Controller = controller;
+    this.Block = controller.Block;
+    this.Name = customStruct.Name;
+    this.Entries = customStruct.Entries;
+    this.Prefix = customStruct.Prefix;
+    if isfield(customStruct, 'ParamBlock')
+        this.ParamBlock = customStruct.ParamBlock;
+    else
+        this.ParamBlock = [];
+    end % if
+    if isfield(customStruct, 'ParamPropNames')
+        this.ParamPropNames = customStruct.ParamPropNames;
+    else
+        this.ParamPropNames = {};
+    end % if
+    if isfield(customStruct, 'WordLengthOffset')
+        this.WordLengthOffset = customStruct.WordLengthOffset;
+    else
+        this.WordLengthOffset = NaN;
+    end % if
+    this.BestPrecString = 'best precision';
+    % 66 67
+    this.loadFromBlock;
+end % function

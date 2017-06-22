@@ -1,0 +1,21 @@
+function preWrite(hWriter, hIntermediate, hCustomizer, Options)
+    % 1 9
+    % 2 9
+    % 3 9
+    % 4 9
+    % 5 9
+    % 6 9
+    % 7 9
+    % 8 9
+    hWriter.WriteDepth = Options.WriteDepth;
+    % 10 17
+    % 11 17
+    % 12 17
+    % 13 17
+    % 14 17
+    % 15 17
+    % 16 17
+    hWriter.WriteTopLevelObjectClasses = Options.WriteObjectClasses;
+    hWriter.WriteSubLevelObjectClasses = Options.WriteObjectClasses;
+    % 19 20
+end % function

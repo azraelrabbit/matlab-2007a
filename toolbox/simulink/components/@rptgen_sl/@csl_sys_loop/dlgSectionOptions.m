@@ -1,0 +1,29 @@
+function dlgStruct = dlgSectionOptions(this, varargin)
+    % 1 10
+    % 2 10
+    % 3 10
+    % 4 10
+    % 5 10
+    % 6 10
+    % 7 10
+    % 8 10
+    % 9 10
+    dlgStruct = this.dlgContainer(vertcat(cellhorzcat(this.dlgWidget('ObjectSection', 'RowSpan', [1.0 1.0], 'ColSpan', [1.0 1.0], 'DialogRefresh', true)), cellhorzcat(this.dlgWidget('ShowTypeInTitle', 'RowSpan', [2.0 2.0], 'ColSpan', [1.0 1.0], 'Enabled', this.ObjectSection)), cellhorzcat(this.dlgWidget('HierarchicalSectionNumbering', 'RowSpan', [3.0 3.0], 'ColSpan', [1.0 1.0], 'Enabled', this.ObjectSection)), cellhorzcat(this.dlgWidget('ObjectAnchor', 'RowSpan', [4.0 4.0], 'ColSpan', [1.0 1.0]))), xlate('Section Options'), 'LayoutGrid', [4.0 1.0], varargin{:});
+    % 11 28
+    % 12 28
+    % 13 28
+    % 14 28
+    % 15 28
+    % 16 28
+    % 17 28
+    % 18 28
+    % 19 28
+    % 20 28
+    % 21 28
+    % 22 28
+    % 23 28
+    % 24 28
+    % 25 28
+    % 26 28
+    % 27 28
+end % function

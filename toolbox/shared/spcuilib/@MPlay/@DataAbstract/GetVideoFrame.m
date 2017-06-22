@@ -1,0 +1,9 @@
+function y = GetVideoFrame(H, idx)
+    % 1 7
+    % 2 7
+    % 3 7
+    % 4 7
+    % 5 7
+    % 6 7
+    error('This is a virtual method');
+end % function

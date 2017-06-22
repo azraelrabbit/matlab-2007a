@@ -1,0 +1,19 @@
+function propertyChanged(smc, event)
+    % 1 10
+    % 2 10
+    % 3 10
+    % 4 10
+    % 5 10
+    % 6 10
+    % 7 10
+    % 8 10
+    % 9 10
+    bd = smc.getBlockDiagram;
+    % 11 15
+    % 12 15
+    % 13 15
+    % 14 15
+    if not(isempty(bd))
+        set_param(bd.Handle, 'Dirty', 'on');
+    end % if
+end % function

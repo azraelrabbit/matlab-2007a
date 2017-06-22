@@ -1,0 +1,16 @@
+function InitBase(playbackObj, srcObj)
+    % 1 6
+    % 2 6
+    % 3 6
+    % 4 6
+    % 5 6
+    mplayObj = srcObj.mplayObj;
+    widgetsObj = mplayObj.widgetsObj;
+    % 8 9
+    playbackObj.srcObj = srcObj;
+    playbackObj.hfig = widgetsObj.hfig;
+    playbackObj.parent_toolbar = widgetsObj.playback_toolbar;
+    playbackObj.parent_menu = widgetsObj.hmenus.playback_parent;
+    playbackObj.parent_menu_tools = widgetsObj.hmenus.tools_parent;
+    playbackObj.status_bar = widgetsObj.hStatusBar;
+end % function

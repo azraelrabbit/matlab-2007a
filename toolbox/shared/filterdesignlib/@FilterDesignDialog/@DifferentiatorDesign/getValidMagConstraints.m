@@ -1,0 +1,14 @@
+function availableconstraints = getValidMagConstraints(this, fconstraints)
+    % 1 8
+    % 2 8
+    % 3 8
+    % 4 8
+    % 5 8
+    % 6 8
+    % 7 8
+    if isminorder(this)
+        availableconstraints = {'Passband ripple and stopband attenuation'};
+    else
+        availableconstraints = {'Unconstrained'};
+    end % if
+end % function

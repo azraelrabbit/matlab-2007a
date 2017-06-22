@@ -1,0 +1,21 @@
+function loadFromBlock(this)
+    % 1 10
+    % 2 10
+    % 3 10
+    % 4 10
+    % 5 10
+    % 6 10
+    % 7 10
+    % 8 10
+    % 9 10
+    this.L = this.Block.L;
+    this.C = this.Block.C;
+    % 12 14
+    % 13 14
+    this.SourceFreq = this.Block.SourceFreq;
+    this.Freq = this.Block.Freq;
+    this.AllPlotType = this.Block.AllPlotType;
+    this.YOption = this.Block.YOption;
+    this.XOption = this.Block.XOption;
+    this.PlotZ0 = this.Block.PlotZ0;
+end % function

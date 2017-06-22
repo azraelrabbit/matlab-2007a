@@ -1,0 +1,25 @@
+function prefspanel
+    % 1 20
+    % 2 20
+    % 3 20
+    % 4 20
+    % 5 20
+    % 6 20
+    % 7 20
+    % 8 20
+    % 9 20
+    % 10 20
+    % 11 20
+    % 12 20
+    % 13 20
+    % 14 20
+    % 15 20
+    % 16 20
+    % 17 20
+    % 18 20
+    com.mathworks.mlwidgets.workspace.MatlabCustomClassRegistry.registerClassCallbacks({'MPlay.MPlayer'}, 'MPlay Controls', {'Bring to top','Video Info','Play/Pause','Stop'}, {'mplayshow all','VideoInfoDlg($1);','PlayPause($1.datasourceObj.playbackControls);','Stop($1.datasourceObj.playbackControls);'});
+    % 20 26
+    % 21 26
+    % 22 26
+    % 23 26
+    % 24 26

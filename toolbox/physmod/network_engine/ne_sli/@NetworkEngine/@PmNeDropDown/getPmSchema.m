@@ -1,0 +1,36 @@
+function [retStatus, pmSchema] = getPmSchema(hThis, pmSchema)
+    % 1 18
+    % 2 18
+    % 3 18
+    % 4 18
+    % 5 18
+    % 6 18
+    % 7 18
+    % 8 18
+    % 9 18
+    % 10 18
+    % 11 18
+    % 12 18
+    % 13 18
+    % 14 18
+    % 15 18
+    % 16 18
+    % 17 18
+    mySchema = struct([]);
+    mySchema(1.0).ClassName = 'NetworkEngine.PmNeDropDown';
+    mySchema(1.0).Version = '1.0.0';
+    % 21 22
+    mySchema(1.0).Parameters.Label = hThis.Label;
+    mySchema(1.0).Parameters.ValueBlkParam = hThis.ValueBlkParam;
+    mySchema(1.0).Parameters.LabelAttrb = hThis.LabelAttrb;
+    mySchema(1.0).Parameters.Choices = hThis.Choices;
+    mySchema(1.0).Parameters.ChoiceVals = hThis.ChoiceVals;
+    mySchema(1.0).Parameters.MapVals = hThis.MapVals;
+    mySchema(1.0).Parameters.StateMap = hThis.hStateMgr.GetPmSchema();
+    retStatus = true;
+    % 30 32
+    % 31 32
+    [retStat, myItems] = hThis.getPmSchemaFromChildren();
+    mySchema(1.0).Items = myItems;
+    pmSchema = mySchema(1.0);
+end % function

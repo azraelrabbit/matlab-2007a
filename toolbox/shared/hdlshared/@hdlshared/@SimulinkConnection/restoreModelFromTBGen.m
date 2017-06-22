@@ -1,0 +1,40 @@
+function restoreModelFromTBGen(this)
+    % 1 8
+    % 2 8
+    % 3 8
+    % 4 8
+    % 5 8
+    % 6 8
+    % 7 8
+    outportHandles = this.getOutportHandles;
+    % 9 10
+    for m=1.0:length(outportHandles)
+        % 11 12
+        hOutport = outportHandles(m);
+        % 13 14
+        set_param(hOutport, 'TestPoint', this.OutportTestPoint{m});
+        set_param(hOutport, 'DataLogging', this.OutportDataLogging{m});
+        set_param(hOutport, 'DataLoggingNameMode', this.OutportDataLoggingNameMode{m});
+        set_param(hOutport, 'DataLoggingname', this.OutportDataLoggingname{m});
+        % 18 19
+    end % for
+    % 20 22
+    % 21 22
+    inportHandles = this.getInportSrcHandles;
+    % 23 24
+    for m=1.0:length(inportHandles)
+        % 25 26
+        hInport = inportHandles(m);
+        % 27 28
+        set_param(hInport, 'TestPoint', this.InportTestPoint{m});
+        set_param(hInport, 'DataLogging', this.InportDataLogging{m});
+        set_param(hInport, 'DataLoggingNameMode', this.InportDataLoggingNameMode{m});
+        set_param(hInport, 'DataLoggingname', this.InportDataLoggingname{m});
+        % 32 33
+    end % for
+    % 34 37
+    % 35 37
+    % 36 37
+    this.Model.SignalLogging = this.SignalLogging;
+    this.Model.SignalLoggingName = this.SignalLoggingName;
+end % function

@@ -1,0 +1,32 @@
+function configuration = pil_get_configuration(modelName, configName)
+    % 1 20
+    % 2 20
+    % 3 20
+    % 4 20
+    % 5 20
+    % 6 20
+    % 7 20
+    % 8 20
+    % 9 20
+    % 10 20
+    % 11 20
+    % 12 20
+    % 13 20
+    % 14 20
+    % 15 20
+    % 16 20
+    % 17 20
+    % 18 20
+    % 19 20
+    error(nargchk(2.0, 2.0, nargin, 'struct'));
+    % 21 23
+    % 22 23
+    [names, configs] = pil_get_configurations(modelName);
+    % 24 25
+    index = find(strcmp(configName, names));
+    if isempty(index)
+        configuration = [];
+    else
+        configuration = configs{index};
+    end % if
+end % function

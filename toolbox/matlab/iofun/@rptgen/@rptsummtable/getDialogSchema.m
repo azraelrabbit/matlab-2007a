@@ -1,0 +1,33 @@
+function dlgStruct = getDialogSchema(this, name)
+    % 1 7
+    % 2 7
+    % 3 7
+    % 4 7
+    % 5 7
+    % 6 7
+    allTypes = this.summ_getTypeList;
+    % 8 9
+    dlgStruct = this.dlgMain(name, vertcat(cellhorzcat(this.dlgContainer(vertcat(cellhorzcat(this.dlgWidget('LoopType', 'Type', 'combobox', 'Entries', ctranspose(allTypes(:, 1.0)), 'RowSpan', [1.0 1.0], 'ColSpan', [1.0 2.0], 'Visible', gt(size(allTypes, 1.0), 1.0), 'DialogRefresh', true)), cellhorzcat(this.dlgWidget('TitleType', 'RowSpan', [2.0 2.0], 'ColSpan', [1.0 1.0], 'DialogRefresh', true)), cellhorzcat(this.dlgWidget('TableTitle', 'RowSpan', [2.0 2.0], 'ColSpan', [2.0 2.0], 'Enabled', strcmp(this.TitleType, 'manual')))), '', 'LayoutGrid', [2.0 2.0], 'ColStretch', [0.0 1.0], 'RowSpan', [1.0 1.0], 'ColSpan', [1.0 1.0])), cellhorzcat(this.dlgSet(getDialogSchema(this.summ_get, 'panel'), 'RowSpan', [2.0 2.0], 'ColSpan', [1.0 1.0]))), 'LayoutGrid', [2.0 1.0], 'RowStretch', [0.0 1.0]);
+    % 10 32
+    % 11 32
+    % 12 32
+    % 13 32
+    % 14 32
+    % 15 32
+    % 16 32
+    % 17 32
+    % 18 32
+    % 19 32
+    % 20 32
+    % 21 32
+    % 22 32
+    % 23 32
+    % 24 32
+    % 25 32
+    % 26 32
+    % 27 32
+    % 28 32
+    % 29 32
+    % 30 32
+    % 31 32
+end % function

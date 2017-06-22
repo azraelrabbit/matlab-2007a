@@ -1,0 +1,31 @@
+function update(theFrameRate, eventData)
+    % 1 10
+    % 2 10
+    % 3 10
+    % 4 10
+    % 5 10
+    % 6 10
+    % 7 10
+    % 8 10
+    % 9 10
+    if gt(nargin, 1.0)
+        if isnumeric(eventData)
+            % 12 13
+            fps = eventData;
+            theFrameRate.source_fps = fps;
+            theFrameRate.desired_fps = fps;
+            theFrameRate.speedPreset = 0.0;
+        else
+            % 18 24
+            % 19 24
+            % 20 24
+            % 21 24
+            % 22 24
+            % 23 24
+            datasourceObj = eventData.Source.datasourceObj.dataSource;
+            theFrameRate.source_fps = datasourceObj.frameRate;
+            theFrameRate.desired_fps = datasourceObj.frameRate;
+            theFrameRate.speedPreset = 1.0;
+        end % if
+    end % if
+end % function

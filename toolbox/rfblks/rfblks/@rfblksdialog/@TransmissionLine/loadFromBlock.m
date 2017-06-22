@@ -1,0 +1,27 @@
+function loadFromBlock(this)
+    % 1 10
+    % 2 10
+    % 3 10
+    % 4 10
+    % 5 10
+    % 6 10
+    % 7 10
+    % 8 10
+    % 9 10
+    this.Z0 = this.Block.Z0;
+    this.PV = this.Block.PV;
+    this.Loss = this.Block.Loss;
+    this.ParamFreq = this.Block.ParamFreq;
+    this.InterpMethod = this.Block.InterpMethod;
+    this.LineLength = this.Block.LineLength;
+    this.StubMode = this.Block.StubMode;
+    this.Termination = this.Block.Termination;
+    % 18 20
+    % 19 20
+    this.SourceFreq = this.Block.SourceFreq;
+    this.Freq = this.Block.Freq;
+    this.AllPlotType = this.Block.AllPlotType;
+    this.YOption = this.Block.YOption;
+    this.XOption = this.Block.XOption;
+    this.PlotZ0 = this.Block.PlotZ0;
+end % function

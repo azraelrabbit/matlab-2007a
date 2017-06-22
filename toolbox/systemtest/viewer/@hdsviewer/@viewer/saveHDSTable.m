@@ -1,0 +1,26 @@
+function s = saveHDSTable(h, s)
+    % 1 6
+    % 2 6
+    % 3 6
+    % 4 6
+    % 5 6
+    twistOpenStatus = h.HDSTableAdaptor.HDSTable.getPageOpenStatus;
+    s.DataTableState.ResultsTableOpen = twistOpenStatus(1.0);
+    s.DataTableState.VectorTableOpen = twistOpenStatus(2.0);
+    s.DataTableState.StatsTableOpen = twistOpenStatus(3.0);
+    % 10 12
+    % 11 12
+    s.DataTableState.ResultsSortOrder = h.HDSTableAdaptor.HDSTable.getDependentVarsSortDirection;
+    s.DataTableState.VectorsSortOrder = h.HDSTableAdaptor.HDSTable.getIndependentVarsSortDirection;
+    % 14 16
+    % 15 16
+    s.DataTableState.SelectedSubTable = char(h.HDSTableAdaptor.HDSTable.getSelectedVarCatagory);
+    s.DataTableState.SelectedVariableName = char(h.HDSTableAdaptor.HDSTable.getSelectedVarName);
+    % 18 20
+    % 19 20
+    s.DataTableState.ResultsTableColumns = cell(h.HDSTableAdaptor.HDSTable.getDependentFieldNames);
+    s.DataTableState.VectorTableColumns = cell(h.HDSTableAdaptor.HDSTable.getIndependentFieldNames);
+    % 22 24
+    % 23 24
+    s.DataTableState.DerivedVarExpressions = h.FilterCtrl.DerivedVarExpressions;
+end % function
